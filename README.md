@@ -1,19 +1,16 @@
+# A Learning App built with React
+
+## Summary
+
 This project is a leaning aid, presenting ranked flashcards and collecting saved articles and videos. After trying to learn a language for years, the  Duolingo app was the first time I regularly studied and made progress. I made this app to become more familiar with React and, most importantly, create a structured and tailored approach to solidify fundamental web development concepts.
 
-# React App Notes
-- Install react router
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) [(guide)](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+- Uses react router
+- Grid and Flexbox layout
 
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
-- [Sending Feedback](#sending-feedback)
-- [Folder Structure](#folder-structure)
 - [Available Scripts](#available-scripts)
   - [npm start](#npm-start)
   - [npm test](#npm-test)
@@ -93,11 +90,8 @@ You can find the most recent version of this guide [here](https://github.com/fac
   - [Azure](#azure)
   - [Firebase](#firebase)
   - [GitHub Pages](#github-pages)
-  - [Heroku](#heroku)
   - [Netlify](#netlify)
   - [Now](#now)
-  - [S3 and CloudFront](#s3-and-cloudfront)
-  - [Surge](#surge)
 - [Advanced Configuration](#advanced-configuration)
 - [Troubleshooting](#troubleshooting)
   - [`npm start` doesn’t detect changes](#npm-start-doesnt-detect-changes)
@@ -107,7 +101,6 @@ You can find the most recent version of this guide [here](https://github.com/fac
   - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
   - [Moment.js locales are missing](#momentjs-locales-are-missing)
 - [Alternatives to Ejecting](#alternatives-to-ejecting)
-- [Something Missing?](#something-missing)
 
 ## Updating to New Releases
 
@@ -125,31 +118,6 @@ To update an existing project to a new version of `react-scripts`, [open the cha
 In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
 
 We commit to keeping the breaking changes minimal so you can upgrade `react-scripts` painlessly.
-
-## Sending Feedback
-
-We are always open to [your feedback](https://github.com/facebookincubator/create-react-app/issues).
-
-## Folder Structure
-
-After creation, your project should look like this:
-
-```
-my-app/
-  README.md
-  node_modules/
-  package.json
-  public/
-    index.html
-    favicon.ico
-  src/
-    App.css
-    App.js
-    App.test.js
-    index.css
-    index.js
-    logo.svg
-```
 
 For the project to build, **these files must exist with exact filenames**:
 
@@ -2225,16 +2193,7 @@ If, when deploying, you get `/dev/tty: No such a device or address` or a similar
 2. `git remote set-url origin https://<user>:<token>@github.com/<user>/<repo>` .
 3. Try `npm run deploy again`
 
-### [Heroku](https://www.heroku.com/)
 
-Use the [Heroku Buildpack for Create React App](https://github.com/mars/create-react-app-buildpack).<br>
-You can find instructions in [Deploying React with Zero Configuration](https://blog.heroku.com/deploying-react-with-zero-configuration).
-
-#### Resolving Heroku Deployment Errors
-
-Sometimes `npm run build` works locally but fails during deploy via Heroku. Following are the most common cases.
-
-##### "Module not found: Error: Cannot resolve 'file' or 'directory'"
 
 If you get something like this:
 
@@ -2247,21 +2206,6 @@ MyDirectory in /tmp/build_1234/src
 It means you need to ensure that the lettercase of the file or directory you `import` matches the one you see on your filesystem or on GitHub.
 
 This is important because Linux (the operating system used by Heroku) is case sensitive. So `MyDirectory` and `mydirectory` are two distinct directories and thus, even though the project builds locally, the difference in case breaks the `import` statements on Heroku remotes.
-
-##### "Could not find a required file."
-
-If you exclude or ignore necessary files from the package you will see a error similar this one:
-
-```
-remote: Could not find a required file.
-remote:   Name: `index.html`
-remote:   Searched in: /tmp/build_a2875fc163b209225122d68916f1d4df/public
-remote:
-remote: npm ERR! Linux 3.13.0-105-generic
-remote: npm ERR! argv "/tmp/build_a2875fc163b209225122d68916f1d4df/.heroku/node/bin/node" "/tmp/build_a2875fc163b209225122d68916f1d4df/.heroku/node/bin/npm" "run" "build"
-```
-
-In this case, ensure that the file is there with the proper lettercase and that’s not ignored on your local `.gitignore` or `~/.gitignore_global`.
 
 ### [Netlify](https://www.netlify.com/)
 
@@ -2312,22 +2256,6 @@ Now offers a zero-configuration single-command deployment. You can use `now` to 
     Paste that URL into your browser when the build is complete, and you will see your deployed app.
 
 Details are available in [this article.](https://zeit.co/blog/unlimited-static)
-
-### [S3](https://aws.amazon.com/s3) and [CloudFront](https://aws.amazon.com/cloudfront/)
-
-See this [blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af) on how to deploy your React app to Amazon Web Services S3 and CloudFront.
-
-### [Surge](https://surge.sh/)
-
-Install the Surge CLI if you haven’t already by running `npm install -g surge`. Run the `surge` command and log in you or create a new account.
-
-When asked about the project path, make sure to specify the `build` folder, for example:
-
-```sh
-       project path: /path/to/project/build
-```
-
-Note that in order to support routers that use HTML5 `pushState` API, you may want to rename the `index.html` in your build folder to `200.html` before deploying to Surge. This [ensures that every URL falls back to that file](https://surge.sh/help/adding-a-200-page-for-client-side-routing).
 
 ## Advanced Configuration
 
@@ -2444,7 +2372,3 @@ In the future, we might start automatically compiling incompatible third-party m
 ## Alternatives to Ejecting
 
 [Ejecting](#npm-run-eject) lets you customize anything, but from that point on you have to maintain the configuration and scripts yourself. This can be daunting if you have many similar projects. In such cases instead of ejecting we recommend to *fork* `react-scripts` and any other packages you need. [This article](https://auth0.com/blog/how-to-configure-create-react-app/) dives into how to do it in depth. You can find more discussion in [this issue](https://github.com/facebookincubator/create-react-app/issues/682).
-
-## Something Missing?
-
-If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
