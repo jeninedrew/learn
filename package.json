@@ -1,6 +1,8 @@
 {
-  "name": "my-app",
+  "name": "learn",
   "version": "0.1.0",
+  "description": "Learning aid fro J9  <3",
+  "author": "hello@frances.ink <hello@frances.ink>",
   "private": true,
   "dependencies": {
     "react": "^16.4.0",

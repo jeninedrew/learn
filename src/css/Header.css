@@ -1,0 +1,8 @@
+.Header {
+  flex: 0 1 100%;
+  grid-column: 1 / -1;
+}
+
+.Header-logo {
+  height: 200px;
+}
