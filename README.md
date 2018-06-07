@@ -1,5 +1,3 @@
-- I just added the random components...pull them into App!!
-
 This project is a leaning aid, presenting ranked flashcards and collecting saved articles and videos. After trying to learn a language for years, the  Duolingo app was the first time I regularly studied and made progress. I made this app to become more familiar with React and, most importantly, create a structured and tailored approach to solidify fundamental web development concepts.
 
 # React App Notes
