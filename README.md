@@ -8,6 +8,8 @@ This project is a leaning aid, presenting ranked flashcards and collecting saved
 - Uses react router
 - Grid and Flexbox layout
 
+- Continuous deployment with [Netlify](https://www.netlify.com/)
+
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
