@@ -1,0 +1,30 @@
+{
+  "flashcards": [
+    {
+      "id": 1,
+      "question": "What the heck is JSX? When are you using it in a React app?",
+      "answer": "Dunno yet. Templating language?",
+      "date-asked": null,
+      "times-asked": 0
+    },
+    {
+      "id": 2,
+      "question": "What is aria all about? And what are the downsides?",
+      "answer": "I wanna look this up.",
+      "date-asked": "2018-06-13",
+      "times-asked": 1
+    }
+  ],
+  "dogs": [
+    {
+      "id": 1,
+      "title": "Ernie face",
+      "url": "https://placekitten.com/200/300"
+    },
+    {
+      "id": 2,
+      "title": "LB and Ernie playing",
+      "url": "https://placekitten.com/200/300"
+    }
+  ]
+}

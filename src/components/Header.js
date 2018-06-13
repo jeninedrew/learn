@@ -8,6 +8,7 @@ class Header extends Component {
     return (
       <header className="Header">
         <img src={logo} className="Header-logo" alt="logo" />
+        <h1>{this.props.appTitle}</h1>
         <Menu />
       </header>
     );

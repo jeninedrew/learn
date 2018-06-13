@@ -1,15 +1,22 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "../css/App.css";
 import Header from "./Header";
-import Panel from "./Panel";
+import Learn from "./Learn";
+import Add from "./Add";
 import Footer from "./Footer";
+import data, { flashcards } from "./json/data.json";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Panel />
+        <Header appTitle="This is title" />
+        <Header appTitle="This is another title instance" />
+        <Fragment className="learns">
+          {/* Return children with no wrapper for Grid! React.Fragment renders out to nothing! */}
+          <Learn />
+        </Fragment>
+        <Add />
         <Footer />
       </div>
     );
