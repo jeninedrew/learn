@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
 class Learn extends Component {
+  goToLearn = e => {
+    console.log(this);
+  };
   render() {
     return (
-      <div className="single-learn">
-        <h1>Single Learn thing</h1>
-        <button className="button" onClick="">
-          Load flachcards
-        </button>
+      <div onClick={this.goToLearn}>
+        <h1>{this.props.title}</h1>
       </div>
     );
   }

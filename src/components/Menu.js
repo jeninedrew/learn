@@ -5,7 +5,7 @@ class Menu extends Component {
     return (
       <ul>
         <a href="/hello">
-          <li>Hello!</li>
+          <li>Hello</li>
         </a>
         <a href="/my-dogs">
           <li>My Dogs</li>

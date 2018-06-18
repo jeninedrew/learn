@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import data, { dogs } from "./json/data.json";
+import data, { dogs } from "../json/data.json";
 
 class MyDogs extends Component {
   render() {
