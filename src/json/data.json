@@ -1,18 +1,38 @@
 {
-  "flashcards": [
+  "review": [
     {
       "id": 1,
-      "question": "What the heck is JSX? When are you using it in a React app?",
-      "answer": "Dunno yet. Templating language?",
-      "date-asked": null,
-      "times-asked": 0
+      "title": "sample review title 1",
+      "learning": "What the heck is JSX? When are you using it in a React app?",
+      "shown": null
+    }
+  ],
+  "watch": [
+    {
+      "id": 1,
+      "title": "sample Vid title 1",
+      "learning": "https://video1.example.com",
+      "shown": null
     },
     {
       "id": 2,
-      "question": "What is aria all about? And what are the downsides?",
-      "answer": "I wanna look this up.",
-      "date-asked": "2018-06-13",
-      "times-asked": 1
+      "title": "sample Vid title 2",
+      "learning": "https://video2.example.com",
+      "shown": null
+    }
+  ],
+  "read": [
+    {
+      "id": 1,
+      "title": "sample read title 1",
+      "learning": "https://article1.example.com",
+      "shown": null
+    },
+    {
+      "id": 2,
+      "title": "sample Read title 2",
+      "learning": "https://article2.example.com",
+      "shown": null
     }
   ],
   "dogs": [
