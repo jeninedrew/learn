@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { rando } from "../js/helper.js";
+import { rando, makeLearningSlug } from "../js/helper.js";
 
 class Learn extends Component {
   goToLearn = e => {
@@ -7,12 +7,9 @@ class Learn extends Component {
     const allLearning = this.props.data;
     // grab a random learning which will be the drill down resource
     const randoLearning = rando(allLearning);
-    const singleRandoLearning = randoLearning.learning;
-    /*
-		Missing steps because I need to make these actual URL's 
-		That make sense: stringify, put hyphens, etc
-		*/
-    this.props.history.push(`/learning/${singleRandoLearning}`);
+    const singleRandoLearning = randoLearning.title;
+    const singleRandoLearningSlug = makeLearningSlug(singleRandoLearning);
+    this.props.history.push(`/learning/${singleRandoLearningSlug}`);
   };
   render() {
     return (
