@@ -1,4 +1,4 @@
-# A Learning App built with React (Also learning React, obvs)
+# A Learning App built with React
 
 ## Summary
 
