@@ -2,9 +2,7 @@
 
 ## Summary
 
-This is going to be a learning app, presenting ranked flashcards and collecting saved articles and videos. After trying to learn a language for years, the  Duolingo app was the first time I regularly studied and made progress. 
-
-Inspired by my language learning progress (and wanting to learn React!), I started building this here app. When V1 is completed, I hope to have a personalized approach to deeply learnign fundamental web development concepts.
+This is going to be a learning app, presenting ranked flashcards and collecting saved articles and videos. After trying to learn a language for years, the  Duolingo app was the first time I regularly studied and made progress. Inspired by my language learning progress (and wanting to learn React!), I started building this here app. When V1 is completed, I hope to have a personalized approach to deeply learnign fundamental web development concepts. Taking the steps to make it a progressive web app is also on the short list.
 
 - This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) [(guide)](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 - Uses react router
