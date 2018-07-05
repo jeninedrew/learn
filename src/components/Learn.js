@@ -1,20 +1,12 @@
 import React, { Component } from "react";
-import { rando, makeLearningSlug } from "../js/helper.js";
+import Learning from "./Learning";
 
 class Learn extends Component {
-  goToLearn = e => {
-    // get the array of learning resources for each respective component
-    const allLearning = this.props.data;
-    // grab a random learning which will be the drill down resource
-    const randoLearning = rando(allLearning);
-    const singleRandoLearning = randoLearning.title;
-    const singleRandoLearningSlug = makeLearningSlug(singleRandoLearning);
-    this.props.history.push(`/learning/${singleRandoLearningSlug}`);
-  };
   render() {
     return (
       <div onClick={this.goToLearn}>
         <h1>{this.props.title}</h1>
+        <Learning />
       </div>
     );
   }

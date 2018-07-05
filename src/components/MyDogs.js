@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import data, { dogs } from "../json/data.json";
+import dogsData from "../json/dogs.json";
 
 class MyDogs extends Component {
   render() {
     return (
       <ul>
-        {dogs.map(function(eachDoggie) {
+        {dogsData.map(function(eachDoggie) {
           return (
             <li>
               {eachDoggie.id} - {eachDoggie.title} - {eachDoggie.url}

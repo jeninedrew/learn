@@ -35,16 +35,18 @@
       "shown": null
     }
   ],
-  "dogs": [
+  "longer": [
     {
       "id": 1,
-      "title": "Ernie face",
-      "url": "https://placekitten.com/200/300"
+      "title": "sample loooong title 1",
+      "learning": "https://article1.example.com",
+      "shown": null
     },
     {
       "id": 2,
-      "title": "LB and Ernie playing",
-      "url": "https://placekitten.com/200/300"
+      "title": "sample loooong title 2",
+      "learning": "https://article2.example.com",
+      "shown": null
     }
   ]
 }
