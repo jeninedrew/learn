@@ -1,8 +1,8 @@
-# A Learning App built with React (Also learning React, obvs)
+# A Learning App built with React
 
 ## Summary
 
-This project is a leaning aid, presenting ranked flashcards and collecting saved articles and videos. After trying to learn a language for years, the  Duolingo app was the first time I regularly studied and made progress. I made this app to become more familiar with React and, most importantly, create a structured and tailored approach to solidify fundamental web development concepts.
+This is going to be a learning app, presenting ranked flashcards and collecting saved articles and videos. After trying to learn a language for years, the  Duolingo app was the first time I regularly studied and made progress. Inspired by my language learning progress (and wanting to learn React!), I started building this here app. When V1 is completed, I hope to have a personalized approach to deeply learnign fundamental web development concepts. Taking the steps to make it a progressive web app is also on the short list.
 
 - This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) [(guide)](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 - Uses react router
@@ -20,10 +20,8 @@ This project is a leaning aid, presenting ranked flashcards and collecting saved
   - [npm run eject](#npm-run-eject)
 - [Supported Browsers](#supported-browsers)
 - [Supported Language Features and Polyfills](#supported-language-features-and-polyfills)
-- [Syntax Highlighting in the Editor](#syntax-highlighting-in-the-editor)
 - [Displaying Lint Output in the Editor](#displaying-lint-output-in-the-editor)
 - [Debugging in the Editor](#debugging-in-the-editor)
-- [Formatting Code Automatically](#formatting-code-automatically)
 - [Changing the Page `<title>`](#changing-the-page-title)
 - [Installing a Dependency](#installing-a-dependency)
 - [Importing a Component](#importing-a-component)
@@ -206,10 +204,6 @@ If you use any other ES6+ features that need **runtime support** (such as `Array
 
 Also note that using some newer syntax features like `for...of` or `[...nonArrayValue]` causes Babel to emit code that depends on ES6 runtime features and might not work without a polyfill. When in doubt, use [Babel REPL](https://babeljs.io/repl/) to see what any specific syntax compiles down to.
 
-## Syntax Highlighting in the Editor
-
-To configure the syntax highlighting in your favorite text editor, head to the [relevant Babel documentation page](https://babeljs.io/docs/editors) and follow the instructions. Some of the most popular editors are covered.
-
 ## Displaying Lint Output in the Editor
 
 >Note: this feature is available with `react-scripts@0.2.0` and higher.<br>
@@ -265,68 +259,6 @@ Then add the block below to your `launch.json` file and put it inside the `.vsco
 Start your app by running `npm start`, and start debugging in VS Code by pressing `F5` or by clicking the green debug icon. You can now write code, set breakpoints, make changes to the code, and debug your newly modified code—all from your editor.
 
 Having problems with VS Code Debugging? Please see their [troubleshooting guide](https://github.com/Microsoft/vscode-chrome-debug/blob/master/README.md#troubleshooting).
-
-### WebStorm
-
-You would need to have [WebStorm](https://www.jetbrains.com/webstorm/) and [JetBrains IDE Support](https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji) Chrome extension installed.
-
-In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and select `JavaScript Debug`. Paste `http://localhost:3000` into the URL field and save the configuration.
-
->Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).
-
-Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
-
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
-
-## Formatting Code Automatically
-
-Prettier is an opinionated code formatter with support for JavaScript, CSS and JSON. With Prettier you can format the code you write automatically to ensure a code style within your project. See the [Prettier's GitHub page](https://github.com/prettier/prettier) for more information, and look at this [page to see it in action](https://prettier.github.io/prettier/).
-
-To format our code whenever we make a commit in git, we need to install the following dependencies:
-
-```sh
-npm install --save husky lint-staged prettier
-```
-
-Alternatively you may use `yarn`:
-
-```sh
-yarn add husky lint-staged prettier
-```
-
-* `husky` makes it easy to use githooks as if they are npm scripts.
-* `lint-staged` allows us to run scripts on staged files in git. See this [blog post about lint-staged to learn more about it](https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8).
-* `prettier` is the JavaScript formatter we will run before commits.
-
-Now we can make sure every file is formatted correctly by adding a few lines to the `package.json` in the project root.
-
-Add the following line to `scripts` section:
-
-```diff
-  "scripts": {
-+   "precommit": "lint-staged",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-```
-
-Next we add a 'lint-staged' field to the `package.json`, for example:
-
-```diff
-  "dependencies": {
-    // ...
-  },
-+ "lint-staged": {
-+   "src/**/*.{js,jsx,json,css}": [
-+     "prettier --single-quote --write",
-+     "git add"
-+   ]
-+ },
-  "scripts": {
-```
-
-Now, whenever you make a commit, Prettier will format the changed files automatically. You can also run `./node_modules/.bin/prettier --single-quote --write "src/**/*.{js,jsx,json,css}"` to format your entire project for the first time.
-
-Next you might want to integrate Prettier in your favorite editor. Read the section on [Editor Integration](https://prettier.io/docs/en/editors.html) on the Prettier GitHub page.
 
 ## Changing the Page `<title>`
 
