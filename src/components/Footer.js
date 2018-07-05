@@ -3,7 +3,7 @@ import "../css/Footer.css";
 
 const Footer = () => (
   <div className="Footer">
-    Rainbow logo created by{" "}
+    Rainbow logo created by&nbsp;{" "}
     <a href="https://thenounproject.com/kyleware/">Kyle Dodson</a>
   </div>
 );

@@ -1,8 +1,11 @@
 .Header {
   flex: 0 1 100%;
-  grid-column: 1 / -1;
+  grid-column: 1/ -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .Header-logo {
   height: 200px;
+  margin-left: 20px;
 }

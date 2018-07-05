@@ -1,0 +1,20 @@
+.Menu {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Menu li {
+  list-style: none;
+}
+.Menu a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 0.25em;
+  border: 1px dotted #444;
+}
+.Menu a:hover,
+.Menu a:focus,
+.Menu a:active {
+  border: 1px dotted #e0e0e0;
+}

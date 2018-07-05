@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import "../css/Menu.css";
 
 class Menu extends Component {
   render() {
     return (
-      <ul>
+      <ul className="Menu">
         <a href="/hello">
           <li>Hello</li>
         </a>

@@ -1,4 +1,21 @@
 .Footer {
   flex: 0 1 100%;
   grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.Footer,
+.Footer a {
+  color: #e0e0e0;
+}
+.Footer a {
+  text-decoration: none;
+  border-bottom: 1px dotted #e0e0e0;
+}
+.Footer a:focus,
+.Footer a:active,
+.Footer a:hover {
+  border-bottom: none;
+  border-bottom: 1px dotted #444;
 }
