@@ -7,7 +7,7 @@ import "../css/App.css";
 import data from "../json/learn.json";
 import { rando } from "../js/helper.js";
 
-class App extends Component {
+class App2 extends Component {
   componentDidMount() {
     console.log("MOUNTED!");
   }
@@ -25,8 +25,34 @@ class App extends Component {
       return rando(type);
     };
 
-    return <div className="App" />;
+    return (
+      <div className="App">
+        <Header />
+        <Learn
+          title="Review"
+          allLearn={allLearn(review)}
+          randoLearn={randoLearn(review)}
+        />
+        <Learn
+          title="Watch"
+          allLearn={allLearn(watch)}
+          randoLearn={randoLearn(watch)}
+        />
+        <Learn
+          title="Read"
+          allLearn={allLearn(read)}
+          randoLearn={randoLearn(read)}
+        />
+        <Learn
+          title="Longer"
+          allLearn={allLearn(longer)}
+          randoLearn={randoLearn(longer)}
+        />
+        <Add />
+        <Footer />
+      </div>
+    );
   }
 }
 
-export default App;
+export default App2;

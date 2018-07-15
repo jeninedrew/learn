@@ -1,12 +1,19 @@
 import React, { Component } from "react";
+import Add from "./Add";
+import { makeSlug } from "../js/helper";
 
 class Color extends Component {
-  goToApp = e => {
-    const learnID = "hi";
-    console.log(this);
+  goToLearn = e => {
+    const type = makeSlug(this.props.type);
+    this.props.push(`/${type}`);
   };
+
   render() {
-    return <button onClick={this.goToApp} />;
+    return (
+      <div className="Color" onClick={this.goToLearn}>
+        <Add />
+      </div>
+    );
   }
 }
 

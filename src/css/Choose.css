@@ -2,54 +2,54 @@
   display: grid;
   grid-template: 1fr;
 }
-.Choose button {
+.Choose .Color {
   border: none;
   margin: 5px;
   height: 120px;
   outline: none;
 }
-.Choose button:nth-of-type(1) {
+.Choose .Color:nth-of-type(1) {
   background-color: #db3841;
 }
-.Choose button:nth-of-type(2) {
+.Choose .Color:nth-of-type(2) {
   background-color: #f08131;
 }
-.Choose button:nth-of-type(3) {
+.Choose .Color:nth-of-type(3) {
   background-color: #fab73f;
 }
-.Choose button:nth-of-type(4) {
+.Choose .Color:nth-of-type(4) {
   background-color: #6aba50;
 }
-.Choose button:nth-of-type(5) {
+.Choose .Color:nth-of-type(5) {
   background-color: #27a1d9;
 }
-.Choose button:nth-of-type(1):hover,
-.Choose button:nth-of-type(1):focus,
-.Choose button:nth-of-type(1):active {
+.Choose .Color:nth-of-type(1):hover,
+.Choose .Color:nth-of-type(1):focus,
+.Choose .Color:nth-of-type(1):active {
   background-color: #af1821;
   transition: all 0.08s ease-in;
 }
-.Choose button:nth-of-type(2):hover,
-.Choose button:nth-of-type(2):focus,
-.Choose button:nth-of-type(2):active {
+.Choose .Color:nth-of-type(2):hover,
+.Choose .Color:nth-of-type(2):focus,
+.Choose .Color:nth-of-type(2):active {
   background-color: #db6510;
   transition: all 0.08s ease-in;
 }
-.Choose button:nth-of-type(3):hover,
-.Choose button:nth-of-type(3):focus,
-.Choose button:nth-of-type(3):active {
+.Choose .Color:nth-of-type(3):hover,
+.Choose .Color:nth-of-type(3):focus,
+.Choose .Color:nth-of-type(3):active {
   background-color: #efa218;
   transition: all 0.08s ease-in;
 }
-.Choose button:nth-of-type(4):hover,
-.Choose button:nth-of-type(4):focus,
-.Choose button:nth-of-type(4):active {
+.Choose .Color:nth-of-type(4):hover,
+.Choose .Color:nth-of-type(4):focus,
+.Choose .Color:nth-of-type(4):active {
   background-color: #45882f;
   transition: all 0.08s ease-in;
 }
-.Choose button:nth-of-type(5):hover,
-.Choose button:nth-of-type(5):focus,
-.Choose button:nth-of-type(5):active {
+.Choose .Color:nth-of-type(5):hover,
+.Choose .Color:nth-of-type(5):focus,
+.Choose .Color:nth-of-type(5):active {
   background-color: #1b759f;
   transition: all 0.08s ease-in;
 }

@@ -1,7 +1,7 @@
 .Menu {
   margin-right: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 .Menu li {
@@ -10,11 +10,11 @@
 .Menu a {
   color: #e0e0e0;
   text-decoration: none;
-  padding: 0.25em;
-  border: 1px dotted #444;
+  padding: 0.25em 0.5em;
+  border-bottom: 1px dotted #444;
 }
 .Menu a:hover,
 .Menu a:focus,
 .Menu a:active {
-  border: 1px dotted #e0e0e0;
+  border-bottom: 1px dotted #e0e0e0;
 }

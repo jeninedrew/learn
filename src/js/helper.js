@@ -4,7 +4,7 @@ export function rando(arr) {
 }
 
 // Make string fir for a URL
-export function makeLearningSlug(title) {
+export function makeSlug(title) {
   return title
     .toLowerCase()
     .replace(/\s/g, "-")

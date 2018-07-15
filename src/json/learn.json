@@ -1,5 +1,13 @@
 {
-  "review": [
+  "rang": [
+    {
+      "id": 1,
+      "title": "sample review title 1",
+      "learning": "What the heck is JSX? When are you using it in a React app?",
+      "shown": null
+    }
+  ],
+  "reps": [
     {
       "id": 1,
       "title": "sample review title 1",
@@ -35,7 +43,7 @@
       "shown": null
     }
   ],
-  "longer": [
+  "tutorials": [
     {
       "id": 1,
       "title": "sample loooong title 1",
