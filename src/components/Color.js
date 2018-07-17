@@ -11,7 +11,7 @@ class Color extends Component {
   render() {
     return (
       <div className="Color" onClick={this.goToLearn}>
-        <Add />
+        <Add addLearn={this.props.addLearn} />
       </div>
     );
   }

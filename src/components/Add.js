@@ -6,22 +6,24 @@ class Add extends Component {
   linkRef = React.createRef();
   typeRef = React.createRef();
 
-  addLearn = e => {
+  createLearn = e => {
+    // stop default form behavior
+    e.preventDefault();
     const learn = {
-      // just aff the other properties here
+      // just add the other properties here
       title: this.titleRef.current.value,
       link: this.linkRef.current.value,
       type: this.typeRef.current.value
     };
-    // stop default form behavior
-    e.preventDefault();
-    console.log(learn);
+    this.props.addLearn(learn);
+    // refresh form
+    e.currentTarget.reset();
   };
   render() {
     return (
       <div className="Add">
         <h2>+</h2>
-        <form className="add-learn" onSubmit={this.addLearn}>
+        <form className="add-learn" onSubmit={this.createLearn}>
           <input
             name="title"
             ref={this.titleRef}
